@@ -123,6 +123,7 @@ h1 {
   font-size: 14px;
   font-weight: bold;
   margin: 16px 0 8px 0;
+  box-sizing: border-box;
 }
 
 .sessions-card .number {
@@ -266,4 +267,32 @@ h1 {
 .card button:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .sessions-card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .sessions-card {
+    width: 80%;
+  }
 }
